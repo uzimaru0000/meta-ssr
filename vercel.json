@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "functions": {
+        "api/index.ts": {
+            "memory": 1024
+        }
+    },
+    "rewrites": [
+        {
+            "source": "/(.*).(js|css|map)",
+            "destination": "dist/$1.$2"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/api"
+        }
+    ]
+}
