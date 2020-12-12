@@ -1,18 +1,20 @@
 {
     "version": 2,
-    "functions": {
-        "api/index.ts": {
-            "memory": 1024
-        }
-    },
-    "rewrites": [
-        {
-            "source": "/(.*).(js|css|map)",
-            "destination": "dist/$1.$2"
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/api"
-        }
-    ]
+	"functions": {
+		"api/**/*.tsx": { "runtime": "vercel-dev-runtime@0.0.2" }
+	},
+	"rewrites": [
+		{
+			"source": "/(.*).(js|css|map)",
+            "destination": "public/$1.$2"
+		},
+		{
+			"source": "/(.*)",
+            "destination": "/api/$1"
+		},
+		{
+			"source": "/(.*)",
+			"destination": "/api/index"
+		}
+	]
 }
