@@ -40,7 +40,7 @@ export const build = async ({
         handler: 'runtime.handler',
         files: {
             'runtime.js': new FileFsRef({
-                fsPath: join(workPath, 'dist', 'runtime.js')
+                fsPath: join(__dirname, 'runtime.js')
             }),
             ...(await glob("**", distPath))
         },
