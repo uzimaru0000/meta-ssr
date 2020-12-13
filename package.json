@@ -1,7 +1,6 @@
 {
-  "name": "meta-ssr",
+  "name": "@uzimaru0000/meta-ssr",
   "version": "1.0.0",
-  "description": "",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -11,7 +10,10 @@
     "prebuild": "rm -rf dist",
     "vercel-build": "echo 'static source'"
   },
-  "keywords": [ "vercel", "runtime" ],
+  "keywords": [
+    "vercel",
+    "runtime"
+  ],
   "author": "uzimaru0000 <shuji365630@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -30,5 +32,14 @@
     "typescript": "^4.1.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzimaru0000/meta-ssr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uzimaru0000/meta-ssr/issues"
+  },
+  "homepage": "https://github.com/uzimaru0000/meta-ssr#readme",
+  "description": ""
 }
